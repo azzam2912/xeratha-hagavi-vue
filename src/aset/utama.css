@@ -1,5 +1,35 @@
-@import './base.css';
+@import './dasar.css';
 
-#app {
-    
+#aplikasi {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.merah {
+  text-decoration: none;
+  color: var(--merah-haxuv);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: var(--hover-bg);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #aplikasi {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
 }

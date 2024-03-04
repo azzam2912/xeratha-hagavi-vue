@@ -1,4 +1,4 @@
-import './assets/utama.css'
+import './aset/utama.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
