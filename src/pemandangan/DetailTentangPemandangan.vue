@@ -1,6 +1,7 @@
 <template>
     <div class="tentang">
-        <h1>Ini halaman tentang</h1>
+        <h1></h1>
+
     </div>
 </template>
 

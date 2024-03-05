@@ -7,12 +7,12 @@ const pengrute = createRouter(
           {
               path: '/',
               name: 'rumah',
-              component: () => import('../views/HomeView.vue')
+              component: () => import('../pemandangan/RumahPemandangan.vue')
           },
           {
-              path: '/tentang',
-              name: 'tentang',
-              component: () => import('../dilihat/TentangSayaDilihat.vue')
+              path: '/pengalaman',
+              name: 'pengalaman',
+              component: () => import('../pemandangan/DetailTentangPemandangan.vue')
           }
         ]
     }
