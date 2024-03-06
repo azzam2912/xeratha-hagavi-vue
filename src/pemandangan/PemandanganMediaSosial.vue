@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import MediaSosial from '@/komponen/MediaSosial.vue';
-import jsonMedsos from '@/data/medsos.json'
+import jsonMedsos from '@/data/medsos.json';
+const getImageUrl = (path: string) => {
+ return new URL(`../aset/${path}`, import.meta.url).href;
+};
 </script>
 
 <template>
@@ -8,7 +11,7 @@ import jsonMedsos from '@/data/medsos.json'
         <div v-for="barang of jsonMedsos" :key="barang.kepsyen">
             <MediaSosial :link="barang.link">
                 <template #ikon>
-                    <img class="gambar-ikon" v-bind:src="'src/aset/' + barang.jalurIkon" :alt="barang.kepsyen" />
+                    <img class="gambar-ikon" v-bind:src="getImageUrl(barang.jalurIkon)" />
                 </template>
                 <template #kepsyen>
                 {{ barang.kepsyen }}
