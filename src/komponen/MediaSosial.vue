@@ -29,12 +29,13 @@ kelas-ikon {
   place-content: center;
   width: 32px;
   height: 32px;
-
-  color: var(--color-text);
+  margin-right: 2px;
 }
 
 h4 {
-  font-size: 1.08rem;
+  font-size: 1rem;
   font-weight: 500;
+  color: var(--color-heading);
+  margin-left: 4px;
 }
 </style>
