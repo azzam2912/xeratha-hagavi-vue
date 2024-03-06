@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
 import TeksPenting from './komponen/TeksPenting.vue';
+import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 </script>
 
 <template>
@@ -28,9 +29,7 @@ import TeksPenting from './komponen/TeksPenting.vue';
             <br/>
             Let's connect and work together!
         </div>
-        <div class="media-sosial">
-
-        </div>
+        <PemandanganMediaSosial/>
         <div class="wrapper">
             <nav>
                 <RouterLink to="/">Home</RouterLink>
