@@ -14,6 +14,27 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
                 height="125" />
         </div>
 
+        <div class="pembungkus-logo" @click="$router.push('/')" >
+            <img alt="Logo Maxflow Hagavi" 
+                class="logo" 
+                src="@/aset/ikon/instagram.svg" 
+                width="125" 
+                height="125" />
+        </div>
+        <div class="pembungkus-logo" @click="$router.push('/')" >
+            <img alt="Logo Maxflow Hagavi" 
+                class="logo" 
+                src="@/aset/ikon/linkedin.svg" 
+                width="125" 
+                height="125" />
+        </div>
+        <div class="pembungkus-logo" @click="$router.push('/')" >
+            <img alt="Logo Maxflow Hagavi" 
+                class="logo" 
+                src="@/aset/ikon/xtwitter.svg" 
+                width="125" 
+                height="125" />
+        </div>
         <div class="tentang-saya">
             Hello World! My name is <TeksPenting msg=Azzam />
             <br/>
