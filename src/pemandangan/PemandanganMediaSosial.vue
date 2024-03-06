@@ -8,7 +8,7 @@ import jsonMedsos from '@/data/medsos.json'
         <div v-for="barang of jsonMedsos" :key="barang.kepsyen">
             <MediaSosial :link="barang.link">
                 <template #ikon>
-                    <img class="gambar-ikon" :src="barang.jalurIkon" :alt="barang.kepsyen" />
+                    <img class="gambar-ikon" v-bind:src="'src/aset/' + barang.jalurIkon" :alt="barang.kepsyen" />
                 </template>
                 <template #kepsyen>
                 {{ barang.kepsyen }}
@@ -16,13 +16,6 @@ import jsonMedsos from '@/data/medsos.json'
             </MediaSosial>
         </div>
     </div>
-            <div class="pembungkus-logo" @click="$router.push('/')" >
-            <img alt="Logo Maxflow Hagavi" 
-                class="logo" 
-                src="@/aset/ikon/linkedin.svg" 
-                width="125" 
-                height="125" />
-        </div>
 </template>
 
 <style scoped>

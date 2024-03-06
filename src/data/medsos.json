@@ -1,21 +1,21 @@
 [
     {
-        "jalurIkon": "src/aset/ikon/instagram.svg",
+        "jalurIkon": "instagram.svg",
         "kepsyen":"Instagram Personal",
         "link": "https://www.instagram.com/azzam_29_12"
     },
     {
-        "jalurIkon": "src/aset/ikon/instagram.svg",
+        "jalurIkon": "instagram.svg",
         "kepsyen":"Instagram Math Account",
         "link": "https://www.instagram.com/haxuv.world"
     },
     {
-        "jalurIkon": "src/aset/ikon/linkedin.svg",
+        "jalurIkon": "linkedin.svg",
         "kepsyen":"LinkedIn",
         "link": "https://www.linkedin.com/in/azzam-labib-hakim-b8212b1a3/"
     },    
     {
-        "jalurIkon": "src/aset/ikon/xtwitter.svg",
+        "jalurIkon": "xtwitter.svg",
         "kepsyen":"Twitter / X",
         "link": "https://twitter.com/xeratha_haxuv/"
     }
