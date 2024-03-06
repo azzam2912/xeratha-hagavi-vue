@@ -44,6 +44,13 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
                 width="125" 
                 height="125" />
         </div>
+        <div class="pembungkus-logo" @click="$router.push('/')" >
+            <img alt="Logo Maxflow Hagavi" 
+                class="logo" 
+                src="@/aset/ikon/linkedin.svg" 
+                width="125" 
+                height="125" />
+        </div>
 </template>
 
 <style scoped>
