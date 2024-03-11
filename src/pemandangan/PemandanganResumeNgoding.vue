@@ -6,15 +6,3 @@
         <iframe src="https://drive.google.com/file/d/1O_OgxQ8aCS0jIWkP140BBkKtNwkfQrEq/preview" width="100%" height="650" allow="autoplay"></iframe>
 	</div>
 </template>
-
-<script>
-export default {
-	data() {
-		return {
-			currentPage: 0,
-			pageCount: 0,
-		}
-	}
-}
-
-</script>

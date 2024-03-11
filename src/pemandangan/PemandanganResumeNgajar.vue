@@ -6,7 +6,3 @@
         <iframe src="https://drive.google.com/file/d/1s1RSNqtOwUMTMM7r6ZYVF5tNthsxt8C3/preview" width="100%" height="650" allow="autoplay"></iframe>
     </div>
 </template>
-
-<style>
-
-</style>
