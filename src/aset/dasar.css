@@ -3,6 +3,7 @@
     --abu-haxuv: #808080;
     --biru-xeratha: #304674;
     --abu-xeratha: #c6d3e3;
+    --abu-haxuv-lunak: hwb(0 50% 50% / 0.112);
 
   --vt-c-white: #ffffff;
   --vt-c-white-soft: #f8f8f8;
@@ -51,6 +52,8 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --color-button: var(--abu-haxuv-lunak);
   }
 }
 

@@ -29,12 +29,13 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
             Let's connect and work together!
         </div>
         <PemandanganMediaSosial/>
-        <!-- <div class="wrapper">
+        <div class="wrapper">
             <nav>
                 <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/pengalaman">Experience</RouterLink>
+                <RouterLink to="/resume-ngajar">Teaching Resume</RouterLink>
+                <RouterLink to="/resume-ngoding">Coding Exp / Project Resume</RouterLink>
             </nav>
-        </div> -->
+        </div>
     </header>
     <RouterView />
 </template>
@@ -43,6 +44,10 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.wrapper {
+  padding-bottom: 2rem;
 }
 
 .pembungkus-logo {
@@ -77,6 +82,8 @@ nav {
 
 nav a.router-link-exact-active {
   color: var(--color-text);
+  background-color: var(--color-button);
+  border-radius: 6pt;
 }
 
 nav a.router-link-exact-active:hover {
@@ -86,8 +93,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-  border-top: 1px dotted var(--color-border);
 }
 
 
@@ -103,6 +108,7 @@ nav a {
     display: flex;
     place-items: center;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   nav {

@@ -10,9 +10,14 @@ const pengrute = createRouter(
               component: () => import('../pemandangan/PemandanganRumah.vue')
           },
           {
-              path: '/pengalaman',
-              name: 'pengalaman',
-              component: () => import('../pemandangan/PemandanganDetailTentang.vue')
+              path: '/resume-ngajar',
+              name: 'resume-ngajar',
+              component: () => import('../pemandangan/PemandanganResumeNgajar.vue')
+          },
+          {
+              path: '/resume-ngoding',
+              name: 'resume-ngoding',
+              component: () => import('../pemandangan/PemandanganResumeNgoding.vue')
           }
         ]
     }
