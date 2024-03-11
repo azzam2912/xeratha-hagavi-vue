@@ -14,16 +14,16 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
                 height="125" />
         </div>
         <div class="tentang-saya">
-            Hello World! My name is <TeksPenting msg=Azzam />
+            Hello World! My name is <TeksPenting pesan=Azzam />
             <br/>
             I'm a final year student at <a href="https://www.ui.ac.id/" style="color: #ffdd00">Universitas Indonesia</a>
             <br />
-            I love doing <TeksPenting msg="Software Engineering"/> stuff
+            I love doing <TeksPenting pesan="Software Engineering"/> stuff
             <br />
             <br />
-            And also, as former math olympiad <TeksPenting msg="Gold Medallist"/>
+            And also, as former math olympiad <TeksPenting pesan="Gold Medallist"/>
             <br />
-            I currently <TeksPenting msg="tutoring and training"/> some of the smartest students in Indonesia for Math Olympiad and Programming stuff.
+            I currently <TeksPenting pesan="tutoring and training"/> some of the smartest students in Indonesia for Math Olympiad and Programming stuff.
             <br />
             <br/>
             Let's connect and work together!

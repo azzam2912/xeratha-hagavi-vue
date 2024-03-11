@@ -1,11 +1,11 @@
 <script setup lang="ts">
     defineProps<{
-        msg?: string;
+        pesan?: string;
     }>()
 </script>
 <template>
     <span class="merah">
-        {{ msg }}
+        {{ pesan }}
     </span>
 </template>
 
