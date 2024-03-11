@@ -29,12 +29,12 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
             Let's connect and work together!
         </div>
         <PemandanganMediaSosial/>
-        <div class="wrapper">
+        <!-- <div class="wrapper">
             <nav>
                 <RouterLink to="/">Home</RouterLink>
                 <RouterLink to="/pengalaman">Experience</RouterLink>
             </nav>
-        </div>
+        </div> -->
     </header>
     <RouterView />
 </template>
