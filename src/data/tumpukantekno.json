@@ -1,0 +1,42 @@
+[
+    {
+        "jalurIkon": "reactjs.svg",
+        "kepsyen":"ReactJS",
+        "link": ""
+    },
+    {
+        "jalurIkon": "nextjs.svg",
+        "kepsyen":"NextJS",
+        "link": ""
+    },
+    {
+        "jalurIkon": "vuejs.svg",
+        "kepsyen":"VueJS",
+        "link": ""
+    },    
+    {
+        "jalurIkon": "javascript.svg",
+        "kepsyen":"Javascript",
+        "link": ""
+    },    
+    {
+        "jalurIkon": "python.svg",
+        "kepsyen":"Python",
+        "link": ""
+    },
+    {
+        "jalurIkon": "django.svg",
+        "kepsyen":"Django",
+        "link": ""
+    },
+    {
+        "jalurIkon": "java.svg",
+        "kepsyen":"Java",
+        "link": ""
+    },
+    {
+        "jalurIkon": "springboot.svg",
+        "kepsyen":"SpringBoot",
+        "link": ""
+    }
+]

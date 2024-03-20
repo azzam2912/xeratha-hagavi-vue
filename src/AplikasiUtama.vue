@@ -1,7 +1,23 @@
 <script setup lang="ts">
-import { RouterView, RouterLink } from 'vue-router';
+import { RouterView, RouterLink, useRouter } from 'vue-router';
 import TeksPenting from './komponen/TeksPenting.vue';
 import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
+import PemandanganTumpukanTeknologi from './pemandangan/PemandanganTumpukanTeknologi.vue';
+const router = useRouter();
+function handleClick(path: string) {
+      router.push(path); 
+      if(path === '/') {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+        return;
+      }
+      let targetID = 'pengalaman'
+      const targetSection = document.getElementById(targetID);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        console.warn('Target section not found');
+      }
+    }
 </script>
 
 <template>
@@ -13,9 +29,9 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
         width="70" 
         height="70" />
     </div>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/resume-ngajar">Teaching Resume</RouterLink>
-    <RouterLink to="/resume-ngoding">Coding Exp / Project Resume</RouterLink>
+    <a @click="handleClick('/')">Home</a>
+    <a @click="handleClick('/resume-ngajar')">Teaching Resume</a>
+    <a @click="handleClick('/resume-ngoding')">Coding Exp / Project Resume</a>
   </nav>
   <div id="konten-utama">
     <header>
@@ -36,8 +52,14 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
           Let's connect and work together!
       </div>
       <PemandanganMediaSosial/>
+      <br />
+      <h3>Anyway my tech stack mastery so far:</h3>
+      <br />
+      <PemandanganTumpukanTeknologi />
     </header>
-    <RouterView />
+    <div id="pengalaman">
+      <RouterView />
+    </div>
   </div>
 </template>
 
