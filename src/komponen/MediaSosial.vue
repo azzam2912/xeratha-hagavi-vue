@@ -9,6 +9,7 @@ defineProps<{
         <div class="kelas-ikon">
             <slot name="ikon"></slot>
         </div>
+        <span>&nbsp;</span>
         <h4>
             <slot name="kepsyen"></slot>
         </h4>
@@ -18,7 +19,7 @@ defineProps<{
 <style scoped>
 .kotak-medsos {
     display: grid;
-    grid-template-columns: 32px auto;
+    grid-template-columns: 32px 1rem auto;
     padding: 2px;
     align-items: center;
     justify-content: start;

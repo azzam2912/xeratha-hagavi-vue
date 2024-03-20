@@ -29,9 +29,17 @@ function handleClick(path: string) {
         width="70" 
         height="70" />
     </div>
-    <a @click="handleClick('/')">Home</a>
-    <a @click="handleClick('/resume-ngajar')">Teaching Resume</a>
-    <a @click="handleClick('/resume-ngoding')">Coding Exp / Project Resume</a>
+    <div class="pembungkus-link">
+      <div class="nav-link">
+        <a @click="handleClick('/')">Home</a>
+      </div>
+      <div class="nav-link">
+        <a @click="handleClick('/resume-ngajar')">Teaching Resume</a>
+      </div>
+      <div class="nav-link">
+        <a @click="handleClick('/resume-ngoding')">Coding Exp / Project Resume</a>
+      </div>
+    </div>
   </nav>
   <div id="konten-utama">
     <header>
@@ -79,6 +87,20 @@ header {
     display: flex;
     top: 0;
     cursor: pointer;
+}
+
+.pembungkus-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  border-color: 1px solid white;
+  border-radius: 10px;
+  margin: 0.2rem;
+  max-width: 320px;
 }
 nav {
     font-size: 1.2rem;
@@ -138,5 +160,10 @@ nav a {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
+
+  .pembungkus-link {
+  display: flex;
+  flex-direction: row;
+}
 }
 </style>

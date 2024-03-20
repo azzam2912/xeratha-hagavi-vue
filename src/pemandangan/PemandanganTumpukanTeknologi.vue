@@ -10,6 +10,7 @@ const getImageUrl = (path: string) => {
         <div v-for="barang of jsonTekno" :key="barang.kepsyen">
             <div class="kotak-tekno">
                 <img class="gambar-ikon" v-bind:src="getImageUrl(barang.jalurIkon)" :alt="barang.kepsyen" />
+                <span>&nbsp;&nbsp;&nbsp;</span>
                 <span>{{barang.kepsyen}}</span>
             </div>
         </div>
@@ -26,8 +27,6 @@ const getImageUrl = (path: string) => {
 }
 .kotak-tekno {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 0.1rem;
     margin: 0.2rem;
@@ -35,5 +34,18 @@ const getImageUrl = (path: string) => {
 }
 .pembungkus-tumpukantekno {
     display: flex;
+    flex-direction: column;
+
+}
+@media (min-width:700px) {
+    .pembungkus-tumpukantekno {
+        display: flex;
+        flex-direction: row;
+    }
+    .kotak-tekno {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 </style>
