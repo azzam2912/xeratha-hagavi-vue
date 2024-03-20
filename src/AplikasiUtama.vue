@@ -5,8 +5,8 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 </script>
 
 <template>
-  <nav @click="$router.push('/')" >
-    <div id="pembungkus-logo">
+  <nav >
+    <div id="pembungkus-logo" @click="$router.push('/')">
         <img alt="Logo Maxflow Hagavi" 
         class="logo" 
         src="@/aset/icon.svg" 
@@ -19,7 +19,8 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
   </nav>
   <div id="konten-utama">
     <header>
-      <div class="tentang-saya">
+      <div id="tentang-saya">
+          <br/>
           Hello World! My name is <TeksPenting pesan=Azzam />
           <br/>
           I'm a final year student at <a href="https://www.ui.ac.id/" style="color: #ffdd00">Universitas Indonesia</a>
@@ -42,8 +43,8 @@ import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 
 <style scoped>
 #konten-utama {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   padding: 0 2rem;
   margin: 0.75rem;
 }
@@ -89,7 +90,7 @@ nav a {
   margin: 0 2rem;
 }
 
-.tentang-saya {
+#tentang-saya {
     font-size: 1.12rem;
     color: var(--color-heading);
 }
@@ -108,6 +109,12 @@ nav a {
     place-items: center;
     flex-wrap: wrap;
     width: 100%;
+  }
+
+  #konten-utama {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
   }
 }
 </style>
