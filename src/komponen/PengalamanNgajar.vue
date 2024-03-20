@@ -9,42 +9,40 @@ import TeksPenting from './TeksPenting.vue'
 </script>
 
 <template>
-  <h2>Notable Experiences in Tech Industry</h2>
+  <br />
+  <h2>Notable Math Olympiad Tutoring Experiences</h2>
   <UnsurPengalaman>
     <template #ikon>
-        <ToolingIcon />
+        <EcosystemIcon />
     </template>
     <template #kepala>
-        Front End Intern at Doku
+        Tutoring Universitas Indonesia Contingent for ONMIPA Matematika 2024
     </template>
     <template #tanggal>
-        March 2024 - September 2024
+        March 2024 - April 2024
     </template>
-    I do a lot of Kotlin and PHP (expected)
+  </UnsurPengalaman>
+  <UnsurPengalaman>
+    <template #ikon>
+        <SupportIcon />
+    </template>
+    <template #kepala>
+        Tutoring SMAN 8 Jakarta for OSK (Olimpiade Sains Kota) Matematika 2024
+    </template>
+    <template #tanggal>
+        January 2024 - March 2024
+    </template>
   </UnsurPengalaman>
   <UnsurPengalaman>
     <template #ikon>
         <IconDocumentation />
     </template>
     <template #kepala>
-        Front End Intern at Collega
+        Private Tutoring a student from Jawa Timur for OSN (Olimpiade Sains Nasional) SMA Matematika 2023
     </template>
     <template #tanggal>
-        July 2024 - October 2024
+        May 2023 - June 2023
     </template>
-    Developing admin dashboard for Banking SmartBranch (smart and self service banking service in each banking branch office) with <TeksPenting pesan="React JS" />.
   </UnsurPengalaman>
   <br />
-  <h2>Notable Math Olympiad Tutoring Experiences</h2>
-  <UnsurPengalaman>
-    <template #ikon>
-        <SupportIcon />
-    </template>
-    <template #kepala>
-        Tutoring SMAN 8 Jakarta for OSK (Olimpiade Sains Kota) 2024
-    </template>
-    <template #tanggal>
-        January 2024 - March 2024
-    </template>
-  </UnsurPengalaman>
-</template>
+</template> 

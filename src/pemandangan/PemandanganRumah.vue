@@ -1,9 +1,13 @@
 <script setup lang="ts">
-import PengalamanPenting from '@/komponen/PengalamanPenting.vue';
+import PengalamanKerja from '@/komponen/PengalamanKerja.vue';
+import PengalamanNgajar from '@/komponen/PengalamanNgajar.vue';
+import PengalamanPrestasi from '@/komponen/PengalamanPrestasi.vue';
 </script>
 
 <template>
   <main>
-    <PengalamanPenting />
+    <PengalamanKerja />
+    <PengalamanPrestasi />
+    <PengalamanNgajar />
   </main>
 </template>

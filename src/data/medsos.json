@@ -18,5 +18,10 @@
         "jalurIkon": "xtwitter.svg",
         "kepsyen":"Twitter / X",
         "link": "https://twitter.com/xeratha_haxuv/"
+    },    
+    {
+        "jalurIkon": "github.svg",
+        "kepsyen":"Github",
+        "link": "https://github.com/azzam2912"
     }
 ]

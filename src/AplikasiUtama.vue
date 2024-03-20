@@ -1,58 +1,80 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterView, RouterLink } from 'vue-router';
 import TeksPenting from './komponen/TeksPenting.vue';
 import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 </script>
 
 <template>
+  <nav @click="$router.push('/')" >
+    <div id="pembungkus-logo">
+        <img alt="Logo Maxflow Hagavi" 
+        class="logo" 
+        src="@/aset/icon.svg" 
+        width="70" 
+        height="70" />
+    </div>
+    <RouterLink to="/">Home</RouterLink>
+    <RouterLink to="/resume-ngajar">Teaching Resume</RouterLink>
+    <RouterLink to="/resume-ngoding">Coding Exp / Project Resume</RouterLink>
+  </nav>
+  <div id="konten-utama">
     <header>
-        <div class="pembungkus-logo" @click="$router.push('/')" >
-            <img alt="Logo Maxflow Hagavi" 
-                class="logo" 
-                src="@/aset/icon.svg" 
-                width="125" 
-                height="125" />
-        </div>
-        <div class="tentang-saya">
-            Hello World! My name is <TeksPenting pesan=Azzam />
-            <br/>
-            I'm a final year student at <a href="https://www.ui.ac.id/" style="color: #ffdd00">Universitas Indonesia</a>
-            <br />
-            I love doing <TeksPenting pesan="Software Engineering"/> stuff
-            <br />
-            <br />
-            And also, as former math olympiad <TeksPenting pesan="Gold Medallist"/>
-            <br />
-            I currently <TeksPenting pesan="tutoring and training"/> some of the smartest students in Indonesia for Math Olympiad and Programming stuff.
-            <br />
-            <br/>
-            Let's connect and work together!
-        </div>
-        <PemandanganMediaSosial/>
-        <div class="wrapper">
-            <nav>
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/resume-ngajar">Teaching Resume</RouterLink>
-                <RouterLink to="/resume-ngoding">Coding Exp / Project Resume</RouterLink>
-            </nav>
-        </div>
+      <div class="tentang-saya">
+          Hello World! My name is <TeksPenting pesan=Azzam />
+          <br/>
+          I'm a final year student at <a href="https://www.ui.ac.id/" style="color: #ffdd00">Universitas Indonesia</a>
+          <br />
+          I love doing <TeksPenting pesan="Software Engineering"/> stuff
+          <br />
+          <br />
+          And also, as former math olympiad <TeksPenting pesan="Gold Medallist"/>
+          <br />
+          I currently <TeksPenting pesan="tutoring and training"/> some of the smartest students in Indonesia for Math Olympiad and Programming stuff.
+          <br />
+          <br/>
+          Let's connect and work together!
+      </div>
+      <PemandanganMediaSosial/>
     </header>
     <RouterView />
+  </div>
 </template>
 
 <style scoped>
+#konten-utama {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+  margin: 0.75rem;
+}
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
-.wrapper {
-  padding-bottom: 2rem;
-}
-
-.pembungkus-logo {
+#pembungkus-logo {
     justify-content: center;
     display: flex;
+    top: 0;
+    cursor: pointer;
+}
+nav {
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+nav a.router-link-exact-active {
+    color: var(--color-text);
+    background-color: var(--color-button);
+    border-radius: 6pt;
+}
+
+nav a.router-link-exact-active:hover {
+    background-color: transparent;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0 1rem;
 }
 
 @media(hover: hover) {
@@ -72,29 +94,6 @@ header {
     color: var(--color-heading);
 }
 
-nav {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 1.2rem;
-  display: grid;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-  background-color: var(--color-button);
-  border-radius: 6pt;
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-}
-
 
 @media (min-width: 1024px) {
   header {
@@ -109,14 +108,6 @@ nav a {
     place-items: center;
     flex-wrap: wrap;
     width: 100%;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
   }
 }
 </style>
