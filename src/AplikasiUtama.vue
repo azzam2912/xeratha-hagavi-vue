@@ -22,7 +22,7 @@ function handleClick(path: string) {
 
 <template>
   <nav >
-    <div id="pembungkus-logo" @click="$router.push('/')">
+    <div id="pembungkus-logo" @click="handleClick('/')">
         <img alt="Logo Maxflow Hagavi" 
         class="logo" 
         src="@/aset/icon.svg" 

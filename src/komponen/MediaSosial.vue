@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-    <a :href="link" class="kotak-medsos">
+    <a :href="link" class="kotak-medsos" target="_blank">
         <div class="kelas-ikon">
             <slot name="ikon"></slot>
         </div>
