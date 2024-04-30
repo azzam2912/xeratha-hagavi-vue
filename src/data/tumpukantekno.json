@@ -18,7 +18,12 @@
         "jalurIkon": "javascript.svg",
         "kepsyen":"Javascript",
         "link": ""
-    },    
+    },  
+    {
+        "jalurIkon": "golang.svg",
+        "kepsyen":"Golang",
+        "link": ""
+    },
     {
         "jalurIkon": "python.svg",
         "kepsyen":"Python",

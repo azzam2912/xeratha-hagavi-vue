@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterView, RouterLink, useRouter } from 'vue-router';
+import { RouterView, useRouter } from 'vue-router';
 import TeksPenting from './komponen/TeksPenting.vue';
 import PemandanganMediaSosial from './pemandangan/PemandanganMediaSosial.vue';
 import PemandanganTumpukanTeknologi from './pemandangan/PemandanganTumpukanTeknologi.vue';
